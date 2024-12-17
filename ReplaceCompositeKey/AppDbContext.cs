@@ -15,10 +15,16 @@ public sealed class AppDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
-        
+
         modelBuilder.Entity<MyEntity>()
-            .HasKey(x => new { x.Prop1, x.Prop2 });
-        
+            // .HasKey(x => new { x.Prop1, x.Prop2 }); // This was the original property
+            .HasKey(x => x.Id);
+
+        // Set the new primary key and seed some default values
+        modelBuilder.Entity<MyEntity>()
+            .Property(x => x.Id)
+            .HasDefaultValueSql("gen_random_uuid()");
+
         // This was used to seed data for the migration
         // Seed(modelBuilder);
     }
