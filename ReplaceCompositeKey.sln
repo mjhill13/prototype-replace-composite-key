@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReplaceCompositeKey", "ReplaceCompositeKey\ReplaceCompositeKey.csproj", "{B3C9B4C5-BEC7-423E-B2EB-237B3F489EED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DEED32F0-05D4-4EDD-BAEB-DB3465C299BD}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3C9B4C5-BEC7-423E-B2EB-237B3F489EED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3C9B4C5-BEC7-423E-B2EB-237B3F489EED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3C9B4C5-BEC7-423E-B2EB-237B3F489EED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3C9B4C5-BEC7-423E-B2EB-237B3F489EED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
